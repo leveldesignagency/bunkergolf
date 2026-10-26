@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bunker Golf — Indoor golf in Langen, Hessen</title>
+    <meta
+      name="description"
+      content="Bunker Golf was built in 2025 in Langen, Hessen, just south of Frankfurt. Indoor simulator bays, 200 courses, and league nights."
+    />
+    <meta name="theme-color" content="#070908" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav" data-nav>
+      <a class="logo" href="#top" aria-label="Bunker Golf home">
+        <img src="Bunker Golf Logo.svg" alt="" />
+      </a>
+
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span class="sr-only">Menu</span>
+        <i></i><i></i>
+      </button>
+
+      <nav class="nav__links" id="site-menu">
+        <a href="#system">System</a>
+        <a href="#courses">Courses</a>
+        <a href="#bays">Bays</a>
+        <a href="#leagues">Leagues</a>
+        <a href="#membership">Membership</a>
+        <a class="btn btn-gold btn-sm" href="#book">Book a bay</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero__grid" aria-hidden="true"></div>
+
+        <div class="wrap hero__layout">
+          <div class="hero__copy">
+            <div class="title-block">
+              <p class="kicker">Bay 04</p>
+              <h1>
+                Every shot.<br />
+                <em>On record.</em>
+              </h1>
+              <p class="lede">
+                A private indoor lab in Langen, Hessen, just south of Frankfurt.
+                Built in 2025. High-speed optics read the ball as it leaves the
+                face, then drop you onto two hundred courses.
+              </p>
+            <div class="hero__actions">
+              <a class="btn btn-gold" href="#book">Book a bay</a>
+              <a class="btn btn-line" href="#system">See the system</a>
+            </div>
+            <dl class="hero__stats">
+              <div>
+                <dt>Courses</dt>
+                <dd>200+</dd>
+              </div>
+              <div>
+                <dt>Built</dt>
+                <dd>2025</dd>
+              </div>
+              <div>
+                <dt>Bays open</dt>
+                <dd>07–23</dd>
+              </div>
+            </dl>
+            </div>
+          </div>
+
+          <aside class="trace" aria-label="Shot tracer">
+            <header class="trace__bar">
+              <span>Live trace</span>
+              <span class="trace__id">BAY 04</span>
+            </header>
+
+            <div class="clubs" role="tablist" aria-label="Club">
+              <button type="button" class="is-on" role="tab" aria-selected="true" data-club="iron">7 iron</button>
+              <button type="button" role="tab" aria-selected="false" data-club="driver">Driver</button>
+              <button type="button" role="tab" aria-selected="false" data-club="wedge">Sand</button>
+            </div>
+
+            <div class="trace__screen">
+              <svg class="tracer" viewBox="0 0 360 190" aria-hidden="true">
+                <defs>
+                  <linearGradient id="traceGold" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0" stop-color="#3dce6e"/>
+                    <stop offset="1" stop-color="#e6c35c"/>
+                  </linearGradient>
+                </defs>
+                <path class="tracer__ground" d="M16 168h328" />
+                <path class="tracer__arc is-on" data-arc="iron" d="M28 166C 92 166, 132 46, 332 58" />
+                <path class="tracer__arc" data-arc="driver" d="M28 166C 120 166, 200 96, 340 88" />
+                <path class="tracer__arc" data-arc="wedge" d="M28 166C 70 166, 92 18, 210 28" />
+                <circle class="tracer__ball" r="5" cx="28" cy="166" />
+              </svg>
+              <div class="yards" aria-hidden="true">
+                <span>100</span><span>150</span><span>200</span><span>250</span>
+              </div>
+            </div>
+
+            <dl class="meters">
+              <div>
+                <dt>Ball speed</dt>
+                <dd><span data-count="124.6" data-decimals="1">0</span><small>mph</small></dd>
+              </div>
+              <div>
+                <dt>Launch</dt>
+                <dd><span data-count="16.4" data-decimals="1">0</span><small>°</small></dd>
+              </div>
+              <div>
+                <dt>Spin</dt>
+                <dd><span data-count="7120" data-decimals="0">0</span><small>rpm</small></dd>
+              </div>
+              <div>
+                <dt>Carry</dt>
+                <dd><span data-count="168" data-decimals="0">0</span><small>yds</small></dd>
+              </div>
+            </dl>
+
+            <footer class="trace__foot">
+              <div class="smash" style="--p: 82">
+                <strong data-smash>1.38</strong>
+                <span>Smash</span>
+              </div>
+              <button class="btn btn-line btn-sm" type="button" data-replay>Replay shot</button>
+            </footer>
+          </aside>
+        </div>
+      </section>
+
+      <section class="system" id="system">
+        <div class="wrap">
+          <div class="title-block">
+            <p class="kicker">The system</p>
+            <h2>Built like a lab. Played like a club.</h2>
+            <p>
+              Three instruments in a room built in Langen in 2025. The screen only moves after the ball has been measured.
+            </p>
+          </div>
+
+          <div class="instruments">
+            <article>
+              <span>01</span>
+              <h3>Optics</h3>
+              <p>Dual high-speed cameras lock the ball from impact through the first metres of flight.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Screen</h3>
+              <p>A 4K impact surface at true scale. The picture keeps up with the strike, not the other way round.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Player card</h3>
+              <p>Carry, spin axis, club path, and smash factor file to your card before you tee the next one.</p>
+            </article>
+          </div>
+
+          <ul class="specbar">
+            <li><strong>±0.2</strong><span>mph ball speed</span></li>
+            <li><strong>0.1°</strong><span>launch angle</span></li>
+            <li><strong>50</strong><span>rpm spin steps</span></li>
+            <li><strong>&lt;1</strong><span>frame of delay</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="courses" id="courses">
+        <svg class="section-wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,52 C180,52 320,118 500,116 C740,113 860,18 1080,16 C1240,14 1340,38 1440,36 L1440,140 L0,140 Z"/>
+        </svg>
+        <div class="wrap">
+          <div class="section-head section-head--row">
+            <div class="title-block">
+              <p class="kicker">Course library</p>
+              <h2>Pick a coast. Play it at full scale.</h2>
+            </div>
+            <div class="filters" role="tablist" aria-label="Filter courses">
+              <button type="button" class="is-on" data-filter="all">All</button>
+              <button type="button" data-filter="links">Links</button>
+              <button type="button" data-filter="coast">Coast</button>
+              <button type="button" data-filter="desert">Desert</button>
+              <button type="button" data-filter="parkland">Parkland</button>
+            </div>
+          </div>
+
+          <div class="course-grid">
+            <button class="course course--feature" type="button" data-land="links" data-course="Northwater Links">
+              <div class="course__map course__map--links">
+                <img src="images/hero-links.jpg" alt="" />
+              </div>
+              <div class="course__body">
+                <h3>Northwater Links</h3>
+                <p>Firm turf, a cross-wind off the left, and a green that only holds a shot that lands soft.</p>
+                <p class="course__facts">Links · Par 71 · 6,840 yds · Wind 14</p>
+              </div>
+            </button>
+
+            <button class="course" type="button" data-land="coast" data-course="Glass Coast">
+              <div class="course__map course__map--coast">
+                <img src="images/course-coast.jpg" alt="" />
+              </div>
+              <div class="course__body">
+                <h3>Glass Coast</h3>
+                <p class="course__facts">Coast · Par 70 · 6,410 yds</p>
+              </div>
+            </button>
+
+            <button class="course" type="button" data-land="desert" data-course="Red Dune">
+              <div class="course__map course__map--desert">
+                <img src="images/course-desert.jpg" alt="" />
+              </div>
+              <div class="course__body">
+                <h3>Red Dune</h3>
+                <p class="course__facts">Desert · Par 72 · 7,120 yds</p>
+              </div>
+            </button>
+
+            <button class="course" type="button" data-land="parkland" data-course="Blackpine">
+              <div class="course__map course__map--park">
+                <img src="images/course-bunker.jpg" alt="" />
+              </div>
+              <div class="course__body">
+                <h3>Blackpine</h3>
+                <p class="course__facts">Parkland · Par 71 · 6,690 yds</p>
+              </div>
+            </button>
+
+            <button class="course" type="button" data-land="links" data-course="Low Tide">
+              <div class="course__map course__map--tide">
+                <img src="images/course-ocean.jpg" alt="" />
+              </div>
+              <div class="course__body">
+                <h3>Low Tide</h3>
+                <p class="course__facts">Links · Par 69 · 6,180 yds</p>
+              </div>
+            </button>
+          </div>
+          <p class="course-empty" hidden>Nothing in that set. Try another land.</p>
+        </div>
+      </section>
+
+      <section class="bays split-gold" id="bays">
+        <div class="wrap bays__layout">
+          <div>
+            <div class="title-block">
+              <p class="kicker">The bays</p>
+              <h2>Same data. Three ways to use the room.</h2>
+            <div class="bay-switch" role="tablist" aria-label="Bay type">
+              <button type="button" class="is-on" role="tab" aria-selected="true" data-bay="focus">Focus</button>
+              <button type="button" role="tab" aria-selected="false" data-bay="match">Match</button>
+              <button type="button" role="tab" aria-selected="false" data-bay="league">League</button>
+            </div>
+            <div class="bay-panel is-on" data-panel="focus">
+              <h3>Focus bay</h3>
+              <p>Solo work. A full wall of numbers, drills for start line and strike, and nobody waiting on your pre-shot.</p>
+              <ul>
+                <li>One player card on the screen</li>
+                <li>Range, wedge ladder, or a full round</li>
+                <li>Session saved when you rack the club</li>
+              </ul>
+            </div>
+            <div class="bay-panel" data-panel="match" hidden>
+              <h3>Match bay</h3>
+              <p>Two to four players. Closest to the pin, stroke play, or a skins game with the scores written live.</p>
+              <ul>
+                <li>Side-by-side player cards</li>
+                <li>Auto handicap for the night</li>
+                <li>A lounge seat behind the hitting line</li>
+              </ul>
+            </div>
+            <div class="bay-panel" data-panel="league" hidden>
+              <h3>League night</h3>
+              <p>Eight players, one board. Thursday is a counted round. The screen shows the ladder between groups.</p>
+              <ul>
+                <li>Season of eight counted rounds</li>
+                <li>Live ladder in the lounge</li>
+                <li>Entry included on Player and Founder</li>
+              </ul>
+            </div>
+            <a class="btn btn-gold" href="#book" data-set-bay="focus">Hold this bay</a>
+            </div>
+          </div>
+
+          <div class="bay-visual" aria-hidden="true">
+            <div class="bay-visual__screen">
+              <span>IMPACT SURFACE</span>
+              <strong>4K</strong>
+            </div>
+            <div class="bay-visual__floor">
+              <span></span>
+              <em>Hitting line</em>
+            </div>
+            <ul>
+              <li><b>4.2m</b> ceiling</li>
+              <li><b>3</b> mats</li>
+              <li><b>18°</b> room</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reel" aria-label="Photographs from the course and the bay">
+        <div class="wrap">
+          <div class="title-block">
+            <p class="kicker">The floor</p>
+            <h2>From the tee to the screen.</h2>
+          </div>
+          <ul class="reel__grid">
+            <li><img src="images/detail-swing.jpg" alt="Golfer at the top of a driver swing" /></li>
+            <li><img src="images/detail-splash.jpg" alt="Player exploding sand out of a bunker" /></li>
+            <li><img src="images/detail-ball.jpg" alt="Golf ball resting on the lip of the hole" /></li>
+            <li><img src="images/detail-walk.jpg" alt="Golfer finishing a shot in low evening light" /></li>
+            <li><img src="images/course-aerial.jpg" alt="Aerial view of fairways and sand" /></li>
+            <li><img src="images/course-flag.jpg" alt="Flagstick on a green" /></li>
+            <li><img src="images/detail-stand.jpg" alt="Golfer playing toward a bunker and the water" /></li>
+            <li><img src="images/detail-strike.jpg" alt="Ball leaving the club face out of the sand" /></li>
+            <li><img src="images/detail-follow.jpg" alt="Golfer holding the finish of an iron shot" /></li>
+            <li><img src="images/detail-close.jpg" alt="Golf ball on a tee" /></li>
+            <li><img src="images/course-sand.jpg" alt="Sand trap in front of a tree-lined fairway" /></li>
+            <li><img src="images/course-park.jpg" alt="Wide parkland fairway with a golf cart" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="session" id="session">
+        <div class="wrap">
+          <div class="title-block">
+            <p class="kicker">A session</p>
+            <ol class="steps">
+            <li>
+              <span>01</span>
+              <h3>Check in</h3>
+              <p>Your card loads the last session, club by club.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Choose</h3>
+              <p>Range, a named course, or a skills drill.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Strike</h3>
+              <p>Optics capture ball and club before the screen reacts.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <h3>Review</h3>
+              <p>Carry, spin, and dispersion stay on the card.</p>
+            </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="leagues" id="leagues">
+        <div class="wrap leagues__layout">
+          <div>
+            <div class="title-block">
+              <p class="kicker">Thursday night</p>
+              <h2>The board does not care about your story.</h2>
+              <p class="lede">
+                Eight counted rounds. A live ladder between groups. Turn up, post a number, move.
+              </p>
+              <a class="btn btn-line" href="#book" data-set-bay="league">Enter league night</a>
+            </div>
+          </div>
+          <div class="board" aria-label="Sample ladder">
+            <header>
+              <span>Ladder · round 6</span>
+              <span>Thru 14</span>
+            </header>
+            <ol>
+              <li><b>01</b><span>HAWK</span><em>-4</em></li>
+              <li class="is-hot"><b>02</b><span>DUNE</span><em>-2</em></li>
+              <li><b>03</b><span>NORTH</span><em>-1</em></li>
+              <li><b>04</b><span>FADE</span><em>E</em></li>
+              <li><b>05</b><span>IRON</span><em>+1</em></li>
+              <li><b>06</b><span>LINKS</span><em>+3</em></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="membership split-gold" id="membership">
+        <div class="wrap">
+          <div class="title-block">
+            <p class="kicker">Membership</p>
+            <h2>Pay for the hour, or keep a bay in the week.</h2>
+          </div>
+          <div class="plans">
+            <article class="plan">
+              <h3>Walk-in</h3>
+              <p class="plan__price"><span>€40</span> / hour</p>
+              <ul>
+                <li>Any open bay</li>
+                <li>Full course library</li>
+                <li>Shot data for the session</li>
+              </ul>
+              <a class="btn btn-line" href="#book">Book an hour</a>
+            </article>
+            <article class="plan plan--gold">
+              <div class="plan__head">
+                <h3>Player</h3>
+                <p class="plan__tag">Most played</p>
+              </div>
+              <p class="plan__price"><span>€95</span> / month</p>
+              <ul>
+                <li>6 hours included</li>
+                <li>League entry</li>
+                <li>Player card kept between visits</li>
+              </ul>
+              <a class="btn btn-dark" href="#book">Take Player</a>
+            </article>
+            <article class="plan">
+              <h3>Founder</h3>
+              <p class="plan__price"><span>€190</span> / month</p>
+              <ul>
+                <li>Unlimited off-peak</li>
+                <li>2 guest hours</li>
+                <li>Priority on league night</li>
+              </ul>
+              <a class="btn btn-line" href="#book">Take Founder</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="book" id="book">
+        <svg class="section-wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,52 C180,52 320,118 500,116 C740,113 860,18 1080,16 C1240,14 1340,38 1440,36 L1440,140 L0,140 Z"/>
+        </svg>
+        <div class="wrap book__layout">
+          <div>
+            <div class="title-block">
+              <p class="kicker">Book</p>
+              <h2>Tell us when you want the bay.</h2>
+              <p class="lede">
+                Langen, just south of Frankfurt. Send a request and we hold the time. Bays run from 07:00 to 23:00.
+              </p>
+              <ul class="book__notes">
+                <li>Focus, match, or league setup</li>
+                <li>Clubs in the bay if you travel light</li>
+                <li>Arrive ten minutes before your time</li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="form" id="book-form" novalidate>
+            <div class="form__row">
+              <label>
+                Name
+                <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                Bay
+                <select name="bay" id="bay" required>
+                  <option value="focus">Focus</option>
+                  <option value="match">Match</option>
+                  <option value="league">League night</option>
+                </select>
+              </label>
+              <label>
+                Course
+                <select name="course" id="course" required>
+                  <option value="Northwater Links">Northwater Links</option>
+                  <option value="Glass Coast">Glass Coast</option>
+                  <option value="Red Dune">Red Dune</option>
+                  <option value="Blackpine">Blackpine</option>
+                  <option value="Low Tide">Low Tide</option>
+                  <option value="Range only">Range only</option>
+                </select>
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                Date
+                <input name="date" type="date" required />
+              </label>
+              <label>
+                Time
+                <select name="time" required>
+                  <option value="07:00">07:00</option>
+                  <option value="09:00">09:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="18:00" selected>18:00</option>
+                  <option value="20:00">20:00</option>
+                </select>
+              </label>
+            </div>
+            <p class="form__error" role="alert" hidden>Add your name and a valid email so we can confirm the bay.</p>
+            <button class="btn btn-gold" type="submit">Request the bay</button>
+          </form>
+
+          <div class="form-success" hidden>
+            <div class="title-block">
+              <p class="kicker">Received</p>
+              <h3>The bay is on hold.</h3>
+              <p data-success-copy></p>
+            </div>
+            <button class="btn btn-line" type="button" data-reset>Make another request</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__layout">
+        <a class="logo" href="#top" aria-label="Bunker Golf home">
+          <img src="Bunker Golf Logo.svg" alt="" />
+        </a>
+        <nav>
+          <a href="#system">System</a>
+          <a href="#courses">Courses</a>
+          <a href="#bays">Bays</a>
+          <a href="#leagues">Leagues</a>
+          <a href="#membership">Membership</a>
+          <a href="#book">Book</a>
+        </nav>
+        <p>Langen, Hessen · south of Frankfurt · built 2025<br />Photographs from Unsplash and Pexels.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
